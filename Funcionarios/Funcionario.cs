@@ -10,5 +10,13 @@
         {
             return Salario * 0.10;
         }
+
+        public static int totalDeFuncionarios { get; private set; }
+
+        public Funcionario() 
+        {
+            System.Console.WriteLine("Criando Funcionário");
+            totalDeFuncionarios++;
+        }
     }
 }

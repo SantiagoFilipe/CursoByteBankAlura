@@ -16,14 +16,22 @@ namespace CursoByteBank
             Joao.CPF = "60526145";
             Joao.Salario = 3000.00;
 
+            Console.WriteLine("Total de Funcionários: " + Funcionario.totalDeFuncionarios);
+
             Diretor paula = new Diretor();
             paula.Nome = "Paula";
-            paula.CPF = "605266532";
+            paula.CPF = "60526532";
             paula.Salario = 5000.00;
+
+            Console.WriteLine("Total de Funcionários: " + Funcionario.totalDeFuncionarios);
 
             Funcionario andre = new Diretor();
             andre.Nome = "André";
-            
+            paula.CPF = "60525959";
+            paula.Salario = 4000.00;
+
+            Console.WriteLine("Total de Funcionários: " + Funcionario.totalDeFuncionarios);
+
             Console.WriteLine("Nome: " + Joao.Nome);
             Console.WriteLine("CPF: " + Joao.CPF);
             Console.WriteLine("Salario: " + Joao.Salario);
