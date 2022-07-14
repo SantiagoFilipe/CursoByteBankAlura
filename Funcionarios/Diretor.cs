@@ -2,9 +2,9 @@
 {
     public class Diretor: Funcionario
     {
-        public double Bonificacao()
+        public override double Bonificacao()
         { 
-            return Salario;
+            return Salario + base.Bonificacao();
         }
     }
 }

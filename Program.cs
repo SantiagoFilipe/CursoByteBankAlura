@@ -22,6 +22,8 @@ namespace CursoByteBank
             paula.Salario = 5000.00;
 
             Funcionario andre = new Diretor();
+            andre.Nome = "André";
+             
 
 
             Console.WriteLine("Nome: " + Joao.Nome);

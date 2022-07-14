@@ -11,7 +11,7 @@
         public string CPF { get; set; }
         public double Salario { get; set; }
 
-        public double Bonificacao()
+        public virtual double Bonificacao()
         {
             return Salario * 0.10;
         }
