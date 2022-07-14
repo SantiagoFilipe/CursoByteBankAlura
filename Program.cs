@@ -23,9 +23,7 @@ namespace CursoByteBank
 
             Funcionario andre = new Diretor();
             andre.Nome = "André";
-             
-
-
+            
             Console.WriteLine("Nome: " + Joao.Nome);
             Console.WriteLine("CPF: " + Joao.CPF);
             Console.WriteLine("Salario: " + Joao.Salario);
