@@ -17,7 +17,6 @@
         {
             this.CPF = CPF;
             this.Salario = Salario;
-            System.Console.WriteLine("Criando Funcionário");
             totalDeFuncionarios++;
         }
 

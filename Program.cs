@@ -1,5 +1,5 @@
 ﻿using CursoByteBank.Utilitarios;
-using System;
+
 
 
 namespace CursoByteBank
@@ -8,50 +8,32 @@ namespace CursoByteBank
     {
         static void Main(string[] args)
         {
-            GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
+            Designer pedro = new Designer("66599948254");
+            pedro.Nome = "Pedro";
 
-            Console.WriteLine("Bem Vindo");
-            Funcionario Joao = new Funcionario("60526145", 3000.00);
-            Joao.Nome = "João";
-
-            Console.WriteLine("Total de Funcionários: " + Funcionario.totalDeFuncionarios);
-
-            Diretor paula = new Diretor("60526532", 5000.00);
+            Diretor paula = new Diretor("655888449612");
             paula.Nome = "Paula";
-            
 
-            Console.WriteLine("Total de Funcionários: " + Funcionario.totalDeFuncionarios);
+            Auxiliar igor = new Auxiliar("316468413631");
+            igor.Nome = "Igor";
 
-            Funcionario andre = new Diretor("60525959", 4000.00);
-            andre.Nome = "André";
+            GerenteDeContas camila = new GerenteDeContas("26143641134836");
+            camila.Nome = "Camila";
 
-            Console.WriteLine("Total de Funcionários: " + Funcionario.totalDeFuncionarios);
+            void CalcularBonificacao()
+            {
+                GerenciadorDeBonificacao gerenciador = new GerenciadorDeBonificacao();
 
-            Console.WriteLine("Nome: " + Joao.Nome);
-            Console.WriteLine("CPF: " + Joao.CPF);
-            Console.WriteLine("Salario: " + Joao.Salario);
-            Console.WriteLine("Bonificação: " + Joao.Bonificacao());
+                gerenciador.Registrar(pedro);
+                gerenciador.Registrar(paula);
+                gerenciador.Registrar(igor);
+                gerenciador.Registrar(camila);
 
-            Console.WriteLine("Nome: " + paula.Nome);
-            Console.WriteLine("CPF: " + paula.CPF);
-            Console.WriteLine("Salario: " + paula.Salario);
-            Console.WriteLine("Bonificação: " + paula.Bonificacao());
+                System.Console.WriteLine("Total de Bonificação: " + gerenciador.RetornarBonificacao());
 
-            Console.WriteLine("Nome: " + andre.Nome);
-            Console.WriteLine("CPF: " + andre.CPF);
-            Console.WriteLine("Salario: " + andre.Salario);
-            Console.WriteLine("Bonificação: " + andre.Bonificacao());
+            }
 
-            gerenciador.Registrar(Joao);
-            gerenciador.Registrar(paula);
-            Console.WriteLine("Bonificação total: " + gerenciador.Bonificacao());
-
-            andre.AumentarSalario();
-            Console.WriteLine("Salário novo do André: " + andre.Salario);
-
-            Joao.AumentarSalario();
-            Console.WriteLine("Salário novo do João: " + Joao.Salario);
-
+            CalcularBonificacao();
         }
     }
 }

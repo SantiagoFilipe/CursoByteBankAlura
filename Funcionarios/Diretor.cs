@@ -2,7 +2,7 @@
 {
     public class Diretor: Funcionario
     {
-        public Diretor(string CPF, double Salario): base (CPF, Salario)
+        public Diretor(string CPF): base (CPF, 5000)
         {
             System.Console.WriteLine("Criando um Diretor");
             
@@ -10,7 +10,7 @@
         }
         public override double Bonificacao()
         { 
-            return Salario + base.Bonificacao();
+            return Salario * 0.5;
         }
 
         public override void AumentarSalario()

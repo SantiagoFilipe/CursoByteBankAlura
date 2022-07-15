@@ -7,7 +7,7 @@
         {
             this.totalBonificacao += funcionario.Bonificacao();
         }
-        public double Bonificacao()
+        public double RetornarBonificacao()
         {
             return this.totalBonificacao;
         }
