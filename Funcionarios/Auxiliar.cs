@@ -1,6 +1,6 @@
 ﻿namespace CursoByteBank
 {
-    class Auxiliar: Funcionario
+    public class Auxiliar: Funcionario
     {
         public Auxiliar (string CPF): base(CPF, 2000)
         {

@@ -1,6 +1,6 @@
 ﻿namespace CursoByteBank
 {
-    class GerenteDeContas: Funcionario
+    public class GerenteDeContas: Funcionario
     {
         public GerenteDeContas (string CPF):base(CPF, 4000) 
         {

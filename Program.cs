@@ -11,6 +11,9 @@ namespace CursoByteBank
             Designer pedro = new Designer("66599948254");
             pedro.Nome = "Pedro";
 
+            Desenvolvedor Jorge = new Desenvolvedor("5646841684");
+            Jorge.Nome = "Jorge";
+
             Diretor paula = new Diretor("655888449612");
             paula.Nome = "Paula";
 
@@ -28,6 +31,7 @@ namespace CursoByteBank
                 gerenciador.Registrar(paula);
                 gerenciador.Registrar(igor);
                 gerenciador.Registrar(camila);
+                gerenciador.Registrar(Jorge);
 
                 System.Console.WriteLine("Total de Bonificação: " + gerenciador.RetornarBonificacao());
 
