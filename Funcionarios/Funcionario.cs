@@ -6,6 +6,7 @@
         public string CPF { get; private set; }
         public double Salario { get; protected set; }
         public static int totalDeFuncionarios { get; private set; }
+
         public Funcionario(string CPF, double Salario) 
         {
             this.CPF = CPF;
@@ -14,8 +15,6 @@
         }
 
         public abstract double Bonificacao();
-
-
         public abstract void AumentarSalario();
         
     }

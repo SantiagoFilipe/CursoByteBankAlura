@@ -16,12 +16,14 @@ namespace CursoByteBank
 
             Diretor paula = new Diretor("655888449612");
             paula.Nome = "Paula";
+            paula.Senha = "548";
 
             Auxiliar igor = new Auxiliar("316468413631");
             igor.Nome = "Igor";
 
             GerenteDeContas camila = new GerenteDeContas("26143641134836");
             camila.Nome = "Camila";
+            camila.Senha = "895";
 
             void CalcularBonificacao()
             {
@@ -37,7 +39,15 @@ namespace CursoByteBank
 
             }
 
+            void UsarSistema()
+            {
+                SistemaInterno sistema = new SistemaInterno();
+                sistema.Logar(paula, "548");
+                sistema.Logar(camila, "4545");                
+            }
+
             CalcularBonificacao();
+            UsarSistema();
         }
     }
 }

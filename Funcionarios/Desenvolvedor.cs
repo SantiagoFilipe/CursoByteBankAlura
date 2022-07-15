@@ -10,11 +10,9 @@
         {
             return Salario * 0.1;
         }
-
         public override void AumentarSalario()
         {
             this.Salario *= 1.11;
-
         }
 
     }
