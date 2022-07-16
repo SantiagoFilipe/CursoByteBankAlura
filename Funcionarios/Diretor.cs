@@ -1,6 +1,6 @@
 ﻿namespace CursoByteBank
 {
-    public class Diretor: Funcionario
+    public class Diretor: FuncionarioAutenticavel
     {
         public Diretor(string CPF): base (CPF, 5000)
         {
@@ -13,11 +13,6 @@
         public override void AumentarSalario()
         {
             this.Salario *= 1.15;
-        }
-        public string Senha { get; set; }
-        public bool Autenticar(string senha)
-        {
-            return this.Senha == senha;
         }
     }
 }
